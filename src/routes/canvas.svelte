@@ -6,6 +6,7 @@
     <div id="A"></div>
     <div id="B"></div>
     <div id="C"></div>
+    <div id="D"></div>
 </div>
 
 
@@ -31,7 +32,7 @@
         rotate: 45deg;
         background: var(--color-theme-1);
         filter: blur(100px);
-        animation: Garen-E 28s ease-in-out infinite;
+        animation: Garen-E 30s linear infinite;
     }
 
     #B {
@@ -58,6 +59,19 @@
         background: var(--color-theme-3);
         filter: blur(70px);
         opacity: .5;
+    }
+
+    #D {
+        position: absolute;
+        top: 90vh;
+        left: 82vw;
+        width: 200px;
+        height: 20vh;
+        rotate: -45deg;
+        background: #ff1020aa;
+        filter: blur(100px);
+        animation: Garen-E 15s 10s linear infinite;
+        transform-origin: 0 50%;
     }
 
     @keyframes Garen-E {

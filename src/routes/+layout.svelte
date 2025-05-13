@@ -43,10 +43,8 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: url("/noise.svg");
-        background-size: 64px 64px;
-        background-repeat: repeat;
-        opacity: 0.31;
+        background: url("/noise.svg") 128px 128px repeat;
+        mix-blend-mode: multiply;
         z-index: -1;
     }
 
