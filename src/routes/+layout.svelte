@@ -39,12 +39,14 @@
     .app::before {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: url("/noise.svg") 128px 128px repeat;
+        inset: 0;
+        background: url("/noise.svg") 10vh repeat;
         mix-blend-mode: multiply;
+
+        /* --- correctifs Safari/WebKit --- */
+        will-change: transform;
+        transform: translateZ(0);
+
         z-index: -1;
     }
 

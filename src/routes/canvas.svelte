@@ -1,16 +1,18 @@
-<script>
-
-</script>
-
 <div id="container">
-    <div id="A"></div>
-    <div id="B"></div>
-    <div id="C"></div>
-    <div id="D"></div>
+    <div class="shape" id="A"></div>
+    <div class="shape" id="B"></div>
+    <div class="shape" id="C"></div>
+    <div class="shape" id="D"></div>
 </div>
 
 
 <style>
+
+    .shape {
+        position: absolute;
+        transform: translateZ(0);      /* ou will-change: transform; */
+        will-change: transform;
+    }
 
     #container {
         position: absolute;
@@ -23,7 +25,6 @@
     }
 
     #A {
-        position: absolute;
         top: 52vh;
         left: 18vw;
         width: 220px;
@@ -32,11 +33,10 @@
         rotate: 45deg;
         background: var(--color-theme-1);
         filter: blur(100px);
-        animation: Garen-E 30s linear infinite;
+        animation: Garen-E 35s linear infinite;
     }
 
     #B {
-        position: absolute;
         top: 24vh;
         left: 75vw;
         width: 200px;
@@ -50,7 +50,6 @@
     }
 
     #C {
-        position: absolute;
         top: 10px;
         left: 10px;
         width: 200px;
@@ -62,7 +61,6 @@
     }
 
     #D {
-        position: absolute;
         top: 90vh;
         left: 82vw;
         width: 200px;

@@ -42,12 +42,14 @@
     .card {
         background-color: #ffffff00;
         backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
         border-radius: 10px;
         box-shadow: 0 2px 4px #00000030;
         transition: .3s;
         display: flex;
         flex-direction: column;
         break-inside: avoid;
+        -webkit-column-break-inside: avoid;
         overflow: hidden;
         margin-bottom: 10px;
     }
