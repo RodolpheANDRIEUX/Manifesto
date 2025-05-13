@@ -78,7 +78,6 @@
         font-size: 10vw;
         color: var(--color-theme-1);
         margin: 0;
-        /*font-family: "Ubuntu", sans-serif;*/
     }
 
     @media ( max-width : 700px) {

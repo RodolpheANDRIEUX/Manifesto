@@ -37,7 +37,7 @@
     }
 
     .menu a {
-        color: var(--color-bg-0);
+        color: var(--color-text);
         font-weight: 700;
         font-size: 1.5rem;
         text-transform: uppercase;
@@ -68,7 +68,7 @@
         left: 0;
         width: 100vw;
         height: 100vh;
-        background-color: var(--color-theme-3);
+        background-color: var(--color-bg-2);
         opacity: .7;
         z-index: -1;
     }

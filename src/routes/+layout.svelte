@@ -42,11 +42,6 @@
         inset: 0;
         background: url("/noise.svg") 10vh repeat;
         mix-blend-mode: multiply;
-
-        /* --- correctifs Safari/WebKit --- */
-        will-change: transform;
-        transform: translateZ(0);
-
         z-index: -1;
     }
 

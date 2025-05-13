@@ -10,8 +10,6 @@
 
     .shape {
         position: absolute;
-        transform: translateZ(0);      /* ou will-change: transform; */
-        will-change: transform;
     }
 
     #container {
@@ -21,7 +19,6 @@
         height: 100%;
         z-index: -10;
         overflow: hidden;
-        margin: 0;
     }
 
     #A {

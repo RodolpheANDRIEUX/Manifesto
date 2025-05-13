@@ -48,7 +48,7 @@
         transition: .3s;
         display: flex;
         flex-direction: column;
-        break-inside: avoid;
+        break-inside: avoid; /* just like me atm */
         -webkit-column-break-inside: avoid;
         overflow: hidden;
         margin-bottom: 10px;
