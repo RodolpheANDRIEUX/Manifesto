@@ -33,7 +33,7 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 150vh;
     }
 
     .app::before {
@@ -56,7 +56,6 @@
         flex-direction: column;
         padding: 0;
         width: 100%;
-        max-width: 72rem;
         margin: 0 auto;
         box-sizing: border-box;
     }

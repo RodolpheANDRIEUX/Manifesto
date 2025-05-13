@@ -3,18 +3,15 @@
 	import Menu from "./menu.svelte";
 
 	let tabs = [
-		{ name: 'Home', url: '/' },
-		{ name: 'About', url: '/about' },
+		{ name: 'Apps', url: '/' },
+		{ name: 'Docs', url: 'https://documentation.manifesto-app.fr/' },
 	];
 
 </script>
 
 
 <header>
-	<div class="logo">
-		<a href="/">
-			<img src="logo.svg" alt="M" />
-		</a>
+	<div>
 	</div>
 
 	<nav>
@@ -35,8 +32,9 @@
 		display: flex;
 		z-index: 10;
 		padding: .5em clamp(0em, 2vw, 5em);
+		height: 3.2em;
 		justify-content: space-between;
-		background-color: var(--color-theme-3);
+		background-color: transparent;
 	}
 
 	.logo a {
@@ -78,7 +76,7 @@
 		position: absolute;
 		bottom: 10px;
 		left: 0;
-		background-color: var(--color-bg-0);
+		background-color: var(--color-theme-1);
 		view-transition-name: indicator;
 	}
 
@@ -86,7 +84,7 @@
 		display: flex;
 		height: 100%;
 		align-items: center;
-		color: var(--color-bg-0);
+		color: var(--color-theme-1);
 		font-weight: 700;
 		font-size: 1rem;
 		text-transform: uppercase;
