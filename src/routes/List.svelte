@@ -29,7 +29,7 @@
         gap: 10px;
         max-width: 72rem;
         width: 100%;
-        margin: 0 auto;
+        margin: 2rem auto;
         box-sizing: border-box;
         padding: 0 1rem;
     }
