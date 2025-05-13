@@ -1,14 +1,6 @@
 <footer>
     <div id="flex-div">
-        <p>© 2024 - Rodolphe ANDRIEUX</p>
-        <div id="flex-icons">
-            <a href="https://www.linkedin.com/in/rodolphe-andrieux" target="_blank">
-                <img src='/icons/linkedin.svg' alt="Logo LinkedIn" width="40" height="40">
-            </a>
-            <a href="https://github.com/RodolpheANDRIEUX" target="_blank">
-                <img src='/icons/github.svg' alt="Logo GitHub" width="40" height="40">
-            </a>
-        </div>
+        <p>© 2025 - Manifesto</p>
     </div>
 </footer>
 
@@ -18,8 +10,8 @@
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
-        background-color: var(--color-theme-3);
-        color: var(--color-bg-0);
+        background-color: var(--color-bg-0);
+        color: var(--color-text);
         padding: 1rem;
     }
 
