@@ -1,18 +1,16 @@
 <script>
     import { fly } from 'svelte/transition';
-    import {quadOut} from "svelte/easing";
+    import { quadOut } from "svelte/easing";
+    import { projects } from '$lib/data/projects.js';
 
-    let projects = [
-        { name: 'Pomodoro', url: 'https://pomodoro.manifesto-app.fr/', img: '/projects/pomodoro.png' },
-        { name: 'Chrono', url: 'https://chrono.manifesto-app.fr/', img: '/projects/chrono.png' },
-        { name: 'Keyboard trainer', url: 'https://trainerprogrammer.manifesto-app.fr/', img: '/projects/trainer.png' },
-    ]
+    const CARD_STAGGER_DELAY_MS = 100;
+    const CARD_ANIMATION_OFFSET_MS = 300;
 </script>
 
 <section>
     {#each projects as project, i}
         <a href={project.url} class="card" in:fly|global={{
-            delay: 100 * i + 300,
+            delay: CARD_STAGGER_DELAY_MS * i + CARD_ANIMATION_OFFSET_MS,
             duration: 300,
             easing: quadOut,
             y: 50,

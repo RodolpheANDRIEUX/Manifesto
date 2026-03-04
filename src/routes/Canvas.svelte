@@ -63,7 +63,7 @@
         width: 200px;
         height: 20vh;
         rotate: -45deg;
-        background: #ff1020aa;
+        background: var(--color-theme-4);
         filter: blur(100px);
         animation: Garen-E 15s 10s linear infinite;
         transform-origin: 0 50%;

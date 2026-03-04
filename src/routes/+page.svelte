@@ -8,8 +8,8 @@
     <!-- Open Graph tags for social media platforms -->
     <meta property="og:title" content="Manifesto" />
     <meta property="og:description" content="The best productivity apps" />
-    <meta property="og:image" content="URL to your preview image" />
-    <meta property="og:url" content="URL of your site or page" />
+    <meta property="og:image" content="https://manifesto-app.fr/logo.svg" />
+    <meta property="og:url" content="https://manifesto-app.fr/" />
     <meta property="og:type" content="website" />
 </svelte:head>
 
@@ -20,13 +20,15 @@
     import {onMount} from 'svelte';
 
     const bars = ['/M1.png', '/M23.png', '/M23.png'];
+    const LOGO_ANIMATION_DELAY_MS = 2000;
+    const BAR_STAGGER_DELAY_MS = 200;
 
     let showM  = false;
     let showText = false;
 
     onMount(() => {
         showM = true;
-        setTimeout(() => showText = true, 2000);
+        setTimeout(() => showText = true, LOGO_ANIMATION_DELAY_MS);
     });
 </script>
 
@@ -38,7 +40,7 @@
         <div class="M" >
             {#each bars as bar, i}
                 <img class="M-bars" src={bar} alt="M"
-                     transition:fly|global={{ y: 100, delay: 200 * i , duration: 1000, easing: quadInOut }}
+                     transition:fly|global={{ y: 100, delay: BAR_STAGGER_DELAY_MS * i, duration: 1000, easing: quadInOut }}
                 >
             {/each}
         </div>

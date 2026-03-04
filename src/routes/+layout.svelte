@@ -1,7 +1,7 @@
 <script>
     import Header from './Header.svelte';
     import Footer from './Footer.svelte';
-    import Canvas from './canvas.svelte';
+    import Canvas from './Canvas.svelte';
     import './style.css';
     import { onNavigate } from "$app/navigation";
 
